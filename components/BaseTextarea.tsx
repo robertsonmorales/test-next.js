@@ -1,4 +1,4 @@
-import capitalizeFirstLetter from "../utilities/util"
+import capitalizeFirstLetter from "../helpers/util"
 
 const Textarea = (props : any) => {
     let showLabel = (props.noLabel)
@@ -14,7 +14,7 @@ const Textarea = (props : any) => {
             
             <textarea name={props.for} 
                 id={props.for} 
-                className="px-4 py-2.5 placeholder-slate-300 text-slate-600 relative bg-white rounded-xl shadow-sm border-2 border-gray-300 outline-none focus:border-primary w-full"
+                className="px-4 py-2.5 placeholder-slate-300 text-slate-600 relative bg-white rounded-xl shadow-sm border border-gray-300 outline-none focus:border-primary w-full"
                 cols={30} 
                 rows={4}
                 placeholder={props.placeholder}></textarea>

@@ -1,4 +1,4 @@
-import capitalizeFirstLetter from "../utilities/util"
+import {capitalizeFirstLetter} from "../helpers/util"
 
 const Select = (props : any) => {
     return (
@@ -7,8 +7,9 @@ const Select = (props : any) => {
                 className="text-gray-700 text-sm font-medium">{capitalizeFirstLetter(props.for)}</label>
             <select name={props.for} 
                 id={props.for}
-                className='px-4 py-2.5 placeholder-slate-300 text-slate-600 relative bg-white rounded-xl shadow-sm border-2 border-gray-300 outline-none focus:border-primary w-full mb-4'>
-                <option selected>{props.placeholder}</option>
+                defaultValue={"default"}
+                className='px-4 py-2.5 placeholder-slate-300 text-slate-600 relative bg-white rounded-xl shadow-sm border border-gray-300 outline-none focus:border-primary w-full'>
+                <option value="default" disabled>{props.placeholder}</option>
 
                 {props.options.map((c : any) => {
                     return (
