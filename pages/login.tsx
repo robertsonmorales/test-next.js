@@ -19,13 +19,13 @@ const Login = () => {
 
             <main className='flex items-center justify-center h-screen'>
 
-                <div className="login-form flex flex-col">
+                <div className="flex flex-col">
                     <div className="flex flex-col gap-3 items-center mb-8">
                         <h1 className='text-3xl font-semibold'>Log in to your account</h1>
                         <p className="text-gray-500">Welcome back! Please enter your details.</p>
                     </div>
 
-                    <div className="form-group">
+                    <form className="form-group" method="post">
                         <Input for="email" 
                             type="text" 
                             placeholder="Enter your email" />
@@ -36,15 +36,16 @@ const Login = () => {
                         
                         <div className="flex justify-between">
                             <Checkbox />
+
                             <a href="/forgot-password"
                                 className='text-link text-primary text-sm font-semibold'>Forgot Password</a>
                         </div>
 
                         <div className="login-options mb-6">
                             <button type="submit" 
-                                className="w-full bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 mb-4">Sign in</button>
+                                className="w-full bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:shadow-lg outline-none hover:bg-secondary hover:shadow-lg focus:bg-primary ease-linear transition-all duration-150 mb-4">Sign in</button>
                             <button type="button"
-                                className="w-full bg-white border-2 border-gray-300 px-5 py-2.5 rounded-lg">
+                                className="w-full bg-white border-2 border-gray-300 px-5 py-2.5 rounded-lg hover:shadow-lg ease-linear transition-all duration-150">
                                 <div className="flex items-center justify-center">
                                     <Image src="/google.svg" 
                                         alt="Google" 
@@ -56,9 +57,12 @@ const Login = () => {
                         </div>
 
                         <div className="text-center">
-                            <p className='text-sm'>Don&apos;t have an account yet? <Link href="/signup" className='text-primary font-semibold'>Sign up</Link></p>
+                            <p className='text-sm text-gray-500'>
+                                <span>Don&apos;t have an account yet? </span>
+                                <Link href="/signup" className='text-primary font-semibold'>Sign up</Link>
+                            </p>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
             </main>
