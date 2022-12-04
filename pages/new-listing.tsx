@@ -85,9 +85,9 @@ const NewListing = () => {
                         <Radio for="payment" text="NZ bank deposit" />
                     </div>
 
-                    <div className="action-buttons flex gap-2">
+                    <div className="action-buttons flex gap-6">
                         <button type="submit" className='px-10 py-4 text-white text-sm bg-primary rounded-lg shadow font-semibold'>Publish</button>
-                        <button type="reset" className='px-10 py-4 text-sm bg-white border rounded-lg shadow font-semibold'>Reset</button>
+                        <button type="reset" className='px-10 py-4 text-sm bg-white border border-gray-300 rounded-lg shadow font-semibold'>Reset</button>
                     </div>
                 </form>
             </main>
