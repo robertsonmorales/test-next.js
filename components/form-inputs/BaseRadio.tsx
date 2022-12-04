@@ -1,4 +1,4 @@
-import { removeSpaceChar } from '../helpers/util'
+import {removeSpaceChar} from "../../helpers/util"
 
 const BaseRadio = (props : any) => {
     let assign = removeSpaceChar(props.text);

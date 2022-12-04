@@ -1,4 +1,4 @@
-import {capitalizeFirstLetter} from "../helpers/util"
+import {capitalizeFirstLetter} from "../../helpers/util"
 
 const Select = (props : any) => {
     return (

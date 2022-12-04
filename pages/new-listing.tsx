@@ -2,11 +2,11 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 import Header from '../components/Header'
-import Input from '../components/BaseInput'
-import Select from '../components/BaseSelect'
-import Textarea from '../components/BaseTextarea'
-import FileUpload from '../components/BaseFileUpload'
-import Radio from '../components/BaseRadio'
+import Input from '../components/form-inputs/BaseInput'
+import Select from '../components/form-inputs/BaseSelect'
+import Textarea from '../components/form-inputs/BaseTextarea'
+import FileUpload from '../components/form-inputs/BaseFileUpload'
+import Radio from '../components/form-inputs/BaseRadio'
 
 const category = [
     {value: "prescription-glasses", text: "Prescription Glasses"},

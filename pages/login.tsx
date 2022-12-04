@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Input from '../components/BaseInput'
-import Checkbox from '../components/BaseCheckbox'
+import Checkbox from '../components/form-inputs/BaseCheckbox'
 
 const Login = () => {
     return (

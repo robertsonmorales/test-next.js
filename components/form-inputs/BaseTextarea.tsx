@@ -1,4 +1,4 @@
-import capitalizeFirstLetter from "../helpers/util"
+import {capitalizeFirstLetter} from "../../helpers/util"
 
 const Textarea = (props : any) => {
     let showLabel = (props.noLabel)
