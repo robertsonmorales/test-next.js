@@ -33,7 +33,9 @@ const NewListing = () => {
             <Header />
 
             <main className='p-5 flex justify-center'>
-                <form className='w-10/12 flex flex-col gap-4'>
+                <form action="/"
+                    method="POST"
+                    className='w-10/12 flex flex-col gap-4'>
                     <div>
                         <h1 className='text-3xl font-semibold mb-8'>What eyewear are you listing today?</h1>
 
@@ -53,7 +55,7 @@ const NewListing = () => {
                             options={conditions}
                             placeholder="Condition of the item" />
                         <Input for="price" 
-                            type="text" 
+                            type="number"
                             placeholder="Price of your listing"
                             currency="$"
                             unit="NZD" />

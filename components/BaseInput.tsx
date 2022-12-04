@@ -34,7 +34,7 @@ const BaseInput = (props : any) => {
                     name={props.for}
                     placeholder={props.placeholder} 
                     autoComplete="off"
-                    className={`px-4 py-2.5 ${(hasCurrencyAndUnit) ? "pl-8" : ""} placeholder-slate-300 text-slate-600 relative bg-white rounded-xl shadow-sm border border-gray-300 outline-none focus:border-primary w-full`}/>
+                    className={`px-4 py-2.5 ${(hasCurrencyAndUnit) ? "pl-8" : ""} placeholder-slate-300 text-slate-600 relative bg-white rounded-xl shadow-sm border border-gray-300 outline-none focus:border-primary w-full`} />
                 {extras}
             </div>
 
